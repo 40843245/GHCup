@@ -13,4 +13,6 @@ It follows the UNIX philosophy of do one thing and do it well. Similar in scope 
 Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; try { & ([ScriptBlock]::Create((Invoke-WebRequest https://www.haskell.org/ghcup/sh/bootstrap-haskell.ps1 -UseBasicParsing))) -Interactive -DisableCurl } catch { Write-Error $_ }
 ```
 
-Take my device for example, 
+Take my device on Windows 11 for example. When I install GHCup, the Poweshell display the [text](https://github.com/40843245/GHCup/blob/main/example/example%20of%20install%20GHCup%20on%20Windows%2011.txt).
+
+You should see the similar output on Powershell if you install GHCup on Powershell on Windows.
