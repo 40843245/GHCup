@@ -1,1 +1,140 @@
+--2024-08-10 14:43:16--  https://www.haskell.org/ghcup/sh/bootstrap-haskell
+Loaded CA certificate '/usr/ssl/certs/ca-bundle.crt'
+Resolving www.haskell.org (www.haskell.org)... 2604:1380:4641:a100::1, 147.75.54.133
+Connecting to www.haskell.org (www.haskell.org)|2604:1380:4641:a100::1|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 27887 (27K) [application/octet-stream]
+Saving to: ‘/dev/stdout’
 
+/dev/stdout              100%[==================================>]  27.23K  --.-KB/s    in 0.008s
+
+2024-08-10 14:43:17 (3.41 MB/s) - ‘/dev/stdout’ saved [27887/27887]
+
+
+Welcome to Haskell!
+
+This script can download and install the following binaries:
+  * ghcup - The Haskell toolchain installer
+  * ghc   - The Glasgow Haskell Compiler
+  * cabal - The Cabal build tool for managing Haskell software
+  * stack - A cross-platform program for developing Haskell projects (similar to cabal)
+  * hls   - (optional) A language server for developers to integrate with their editor/IDE
+
+ghcup installs only into the following directory,
+[ Info  ] verifying digest of: gs.exe
+[ Info  ] verifying digest of: ghc-9.4.8-x86_64-unknown-mingw32.tar.xz
+[ Info  ] Unpacking: ghc-9.4.8-x86_64-unknown-mingw32.tar.xz to C:/ghcup\tmp\ghcup-344270f27586d53e
+[ Info  ] Installing GHC (this may take a while)
+[ Info  ] Merging file tree from "C:/ghcup\tmp\ghcup-344270f27586d53e\ghc-9.4.8-x86_64-unknown-mingw32" to "C:/ghcup\ghc\9.4.8"
+[ Info  ] GHC installation successful
+[ Info  ] verifying digest of: gs.exe
+[ Info  ] GHC 9.4.8 successfully set as default version
+[ Info  ] verifying digest of: gs.exe
+[ Info  ] downloading: https://downloads.haskell.org/ghcup/unofficial-bindists/cabal/3.10.3.0/cabal-install-3.10.3.0-x86_64-mingw64.zip as file C:/ghcup\cache\cabal-install-3.10.3.0-x86_64-mingw64.zip
+--2024-08-10 14:45:22--  https://downloads.haskell.org/ghcup/unofficial-bindists/cabal/3.10.3.0/cabal-install-3.10.3.0-x86_64-mingw64.zip
+Loaded CA certificate '/usr/ssl/certs/ca-bundle.crt'
+Resolving downloads.haskell.org (downloads.haskell.org)... 2a04:4e42:8c::431, 146.75.113.175
+Connecting to downloads.haskell.org (downloads.haskell.org)|2a04:4e42:8c::431|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 15918438 (15M) [application/zip]
+Saving to: ‘C:/ghcup\\cache\\cabal-install-3.10.3.0-x86_64-mingw64.zip.tmp’
+
+C:/ghcup\cache\cabal-install-3.10.3.0-x 100%[=============================================================================>]  15.18M   500KB/s    in 43s
+
+2024-08-10 14:46:06 (359 KB/s) - ‘C:/ghcup\\cache\\cabal-install-3.10.3.0-x86_64-mingw64.zip.tmp’ saved [15918438/15918438]
+
+[ Info  ] verifying digest of: cabal-install-3.10.3.0-x86_64-mingw64.zip
+[ Info  ] Unpacking: cabal-install-3.10.3.0-x86_64-mingw64.zip to C:/ghcup\tmp\ghcup-eb393434c9e01dbb
+[ Info  ] Installing cabal
+[ Info  ] Cabal installation successful
+Writing default configuration to C:\cabal\config
+Downloading the latest package list from hackage.haskell.org
+Package list of hackage.haskell.org has been updated.
+The index-state is set to 2024-08-09T21:18:43Z.
+[ Info  ] downloading: https://raw.githubusercontent.com/haskell/ghcup-metadata/master/ghcup-0.0.8.yaml as file C:/ghcup\cache\ghcup-0.0.8.yaml
+[ Info  ] verifying digest of: gs.exe
+[ Info  ] downloading: https://downloads.haskell.org/~ghcup/unofficial-bindists/haskell-language-server/2.7.0.0/haskell-language-server-2.7.0.0-x86_64-mingw64.zip as file C:/ghcup\cache\haskell-language-server-2.7.0.0-x86_64-mingw64.zip
+--2024-08-10 14:50:24--  https://downloads.haskell.org/~ghcup/unofficial-bindists/haskell-language-server/2.7.0.0/haskell-language-server-2.7.0.0-x86_64-mingw64.zip
+Loaded CA certificate '/usr/ssl/certs/ca-bundle.crt'
+Resolving downloads.haskell.org (downloads.haskell.org)... 2a04:4e42:8c::431, 146.75.113.175
+Connecting to downloads.haskell.org (downloads.haskell.org)|2a04:4e42:8c::431|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 294567608 (281M) [application/zip]
+Saving to: ‘C:/ghcup\\cache\\haskell-language-server-2.7.0.0-x86_64-mingw64.zip.tmp’
+
+C:/ghcup\cache\haskell-language-server- 100%[=============================================================================>] 280.92M  1.01MB/s    in 6m 27s
+
+2024-08-10 14:56:52 (743 KB/s) - ‘C:/ghcup\\cache\\haskell-language-server-2.7.0.0-x86_64-mingw64.zip.tmp’ saved [294567608/294567608]
+
+[ Info  ] verifying digest of: haskell-language-server-2.7.0.0-x86_64-mingw64.zip
+[ Info  ] Unpacking: haskell-language-server-2.7.0.0-x86_64-mingw64.zip to C:/ghcup\tmp\ghcup-8d1dc62cf704ed2e
+[ Info  ] Installing HLS
+[ Info  ] HLS installation successful
+[ Info  ] This is just the server part of your LSP configuration. Consult the README on how to
+[ ...   ] configure HLS, your project and your LSP client in your editor:
+[ ...   ]   https://haskell-language-server.readthedocs.io/en/stable/
+[ Info  ] downloading: https://raw.githubusercontent.com/haskell/ghcup-metadata/master/ghcup-0.0.8.yaml as file C:/ghcup\cache\ghcup-0.0.8.yaml
+[ Info  ] verifying digest of: gs.exe
+[ Info  ] downloading: https://downloads.haskell.org/~ghcup/unofficial-bindists/stack/2.15.5/stack-2.15.5-windows-x86_64.tar.gz as file C:/ghcup\cache\stack-2.15.5-windows-x86_64.tar.gz
+--2024-08-10 14:56:59--  https://downloads.haskell.org/~ghcup/unofficial-bindists/stack/2.15.5/stack-2.15.5-windows-x86_64.tar.gz
+Loaded CA certificate '/usr/ssl/certs/ca-bundle.crt'
+Resolving downloads.haskell.org (downloads.haskell.org)... 2a04:4e42:8c::431, 146.75.113.175
+Connecting to downloads.haskell.org (downloads.haskell.org)|2a04:4e42:8c::431|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 21269879 (20M) [application/gzip]
+Saving to: ‘C:/ghcup\\cache\\stack-2.15.5-windows-x86_64.tar.gz.tmp’
+
+C:/ghcup\cache\stack-2.15.5-windows-x86 100%[=============================================================================>]  20.28M  1017KB/s    in 20s
+
+2024-08-10 14:57:20 (1.02 MB/s) - ‘C:/ghcup\\cache\\stack-2.15.5-windows-x86_64.tar.gz.tmp’ saved [21269879/21269879]
+
+[ Info  ] verifying digest of: stack-2.15.5-windows-x86_64.tar.gz
+[ Info  ] Unpacking: stack-2.15.5-windows-x86_64.tar.gz to C:/ghcup\tmp\ghcup-246918350ebed766
+[ Info  ] Installing stack
+[ Info  ] Stack installation successful
+[ Info  ] Stack manages GHC versions internally by default. To improve integration, please visit:
+[ ...   ]   https://www.haskell.org/ghcup/guide/#stack-integration
+[ ...   ]
+[ ...   ] Also check out:
+[ ...   ]   https://docs.haskellstack.org/en/stable/yaml_configuration
+--2024-08-10 14:57:20--  https://www.haskell.org/ghcup/sh/hooks/stack/ghc-install.sh
+Loaded CA certificate '/usr/ssl/certs/ca-bundle.crt'
+Resolving www.haskell.org (www.haskell.org)... 2604:1380:4641:a100::1, 147.75.54.133
+Connecting to www.haskell.org (www.haskell.org)|2604:1380:4641:a100::1|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 764 [application/x-sh]
+Saving to: ‘/dev/stdout’
+
+/dev/stdout                             100%[=============================================================================>]     764  --.-KB/s    in 0s
+
+2024-08-10 14:57:22 (1.67 MB/s) - ‘/dev/stdout’ saved [764/764]
+
+sed: can't read /c/Users/40843/.bashrc: No such file or directory
+
+===============================================================================
+
+OK! /c/Users/40843/.bashrc has been modified. Restart your terminal for the changes to take effect,
+or type ". /c/ghcup/env" to apply them in your current terminal session.
+
+===============================================================================
+
+All done!
+
+In a new powershell or cmd.exe session, now you can...
+
+Start a simple repl via:
+  ghci
+
+Start a new haskell project in the current directory via:
+  cabal init --interactive
+
+To install other GHC versions and tools, run:
+  ghcup tui
+
+To install system libraries and update msys2/mingw64,
+open the "Mingw haskell shell"
+and the "Mingw package management docs"
+desktop shortcuts.
+
+If you are new to Haskell, check out https://www.haskell.org/ghcup/steps/
+Press any key to exit
